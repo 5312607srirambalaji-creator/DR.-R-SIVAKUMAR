@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experience & Teaching | Dr. R. Sivakumar | SRMIST</title>
+  <meta name="description" content="Academic career history, courses taught, educational qualifications, awards, and institutional service of Dr. R. Sivakumar.">
+  
+  <!-- Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0c4da2',
+              50: '#f0f6fe',
+              100: '#dceafd',
+              200: '#bfd9fc',
+              500: '#0c4da2',
+              600: '#0a3f85',
+              700: '#083470',
+              800: '#072b5c',
+              900: '#051f43',
+            },
+            accent: {
+              gold: '#d97706',
+              light: '#fbbf24',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Sticky Navbar -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 dark:border-slate-800/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden ring-2 ring-blue-600/30 dark:ring-blue-400/30 group-hover:ring-blue-600 transition-all shadow-sm">
+            <img src="assets/profile.jpg" alt="Dr. R. Sivakumar" class="w-full h-full object-cover object-top">
+          </div>
+          <div>
+            <div class="font-heading font-bold text-lg text-slate-900 dark:text-white leading-tight tracking-tight flex items-center gap-2">
+              Dr. R. Sivakumar
+              <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-300">SRMIST</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Professor & Coordinator, Earthquake Research Cell</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1.5 font-medium text-sm text-slate-600 dark:text-slate-300">
+          <a href="index.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Home</a>
+          <a href="research.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Research & Patents</a>
+          <a href="publications.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Publications (95)</a>
+          <a href="experience.html" class="px-3.5 py-2 rounded-xl text-blue-600 dark:text-blue-400 font-semibold bg-blue-50 dark:bg-blue-950/60 transition-colors">Experience & Teaching</a>
+          <a href="contact.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Contact & Inquiry</a>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="flex items-center gap-2.5">
+          <button type="button" aria-label="Toggle Theme" class="theme-toggle-btn p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 border border-slate-200 dark:border-slate-700 transition-all focus:outline-none">
+            <i class="fa-solid fa-moon hidden dark:block text-amber-300"></i>
+            <i class="fa-solid fa-sun block dark:hidden text-amber-500"></i>
+          </button>
+
+          <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition-all">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Inquire</span>
+          </a>
+
+          <button id="mobile-menu-btn" type="button" aria-label="Open Navigation Menu" class="lg:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 focus:outline-none">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg px-4 pt-3 pb-5 space-y-1 shadow-xl">
+      <a href="index.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Home</a>
+      <a href="research.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Research & Patents</a>
+      <a href="publications.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Publications (95)</a>
+      <a href="experience.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50">Experience & Teaching</a>
+      <a href="contact.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Contact & Inquiry</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="bg-gradient-to-b from-blue-50/70 via-white to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 py-12 border-b border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Academic Trajectory</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+          Experience, Education & Teaching
+        </h1>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+          Over 22 years of continuous dedication to engineering education, postgraduate supervision, laboratory leadership, and national scientific advisory committees.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main class="py-16 space-y-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+    <!-- Section 1: Professional Experience Timeline -->
+    <section id="experience">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Chronology</span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 dark:text-white mt-1">
+          Academic & Leadership Appointments
+        </h2>
+      </div>
+
+      <div class="relative border-l-2 border-blue-600/30 dark:border-blue-500/30 ml-4 md:ml-6 space-y-8">
+        
+        <!-- SRMIST Professor -->
+        <div class="relative pl-8 md:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-600 ring-4 ring-blue-100 dark:ring-blue-900"></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-blue-100 text-blue-800 dark:bg-blue-900/40 dark:text-blue-300">Jan 2018 – Present</span>
+              <span class="text-xs font-semibold text-slate-500">SRMIST Kattankulathur</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">Professor</h3>
+            <p class="text-sm font-semibold text-blue-600 dark:text-blue-400">Department of Civil Engineering, Faculty of Engineering & Technology</p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2">
+              Teaching advanced undergraduate and postgraduate courses in Remote Sensing, GIS, and Engineering Geology. Supervising Ph.D. scholars and leading extramural research grants.
+            </p>
+          </div>
+        </div>
+
+        <!-- Coordinator ERC -->
+        <div class="relative pl-8 md:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-amber-500 ring-4 ring-amber-100 dark:ring-amber-900"></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-amber-100 text-amber-800 dark:bg-amber-900/40 dark:text-amber-300">2012 – Present</span>
+              <span class="text-xs font-semibold text-slate-500">Research Cell</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">Coordinator, Earthquake Research Cell (CET)</h3>
+            <p class="text-sm font-semibold text-amber-600 dark:text-amber-400">SRM Institute of Science and Technology</p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2">
+              Directing earthquake monitoring, seismotectonic investigations, and subsurface hazard zonation. Facilitating interdisciplinary collaboration across structural engineering and earth observation.
+            </p>
+          </div>
+        </div>
+
+        <!-- Assoc Prof SRMIST -->
+        <div class="relative pl-8 md:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-400 ring-4 ring-blue-100 dark:ring-blue-950"></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Aug 2009 – Dec 2017</span>
+              <span class="text-xs font-semibold text-slate-500">SRMIST</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">Associate Professor</h3>
+            <p class="text-sm font-semibold text-slate-700 dark:text-slate-300">Department of Civil Engineering, SRMIST</p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2">
+              Managed ABET accreditation files, instituted digital image processing curricula, and conducted funded DST research on hyperspectral limnology.
+            </p>
+          </div>
+        </div>
+
+        <!-- Reader BIT Mesra -->
+        <div class="relative pl-8 md:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-blue-300 ring-4 ring-blue-100 dark:ring-blue-950"></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Apr 2004 – Aug 2009</span>
+              <span class="text-xs font-semibold text-slate-500">BIT Mesra Ranchi</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">Reader</h3>
+            <p class="text-sm font-semibold text-slate-700 dark:text-slate-300">Department of Remote Sensing, Birla Institute of Technology (BIT Mesra)</p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2">
+              Conducted research and instruction in Satellite Photogrammetry and Spatial Modeling. Principal Investigator for SERC / DST Young Scientist Grant.
+            </p>
+          </div>
+        </div>
+
+        <!-- GIS Institute Noida -->
+        <div class="relative pl-8 md:pl-10">
+          <div class="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-slate-400 ring-4 ring-slate-100 dark:ring-slate-900"></div>
+          <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-sm">
+            <div class="flex flex-wrap items-center justify-between gap-2 mb-2">
+              <span class="px-2.5 py-0.5 rounded-full text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Apr 2001 – Apr 2004</span>
+              <span class="text-xs font-semibold text-slate-500">GIS Institute Noida</span>
+            </div>
+            <h3 class="text-lg font-bold font-heading text-slate-900 dark:text-white">Senior Faculty & Head, GIS Training & Research</h3>
+            <p class="text-sm font-semibold text-slate-700 dark:text-slate-300">GIS Institute, Noida</p>
+            <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 mt-2">
+              Directed nationwide professional training programs in Enterprise GIS and satellite image processing.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 2: Educational Qualifications -->
+    <section id="education">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Degrees</span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 dark:text-white mt-1">
+          Educational Qualifications
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 rounded-md text-xs font-bold bg-blue-600 text-white inline-block mb-3">
+              Ph.D. (2001)
+            </span>
+            <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white">
+              Bharathidasan University
+            </h3>
+            <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-1">
+              Geoinformatics in Earth Sciences
+            </p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+              Catchment Treatment Modeling and Watershed Geoinformatics.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-400">
+            Tiruchirappalli, Tamil Nadu
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 rounded-md text-xs font-bold bg-slate-800 text-white dark:bg-slate-700 inline-block mb-3">
+              M.Tech. (1993)
+            </span>
+            <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white">
+              Bharathidasan University
+            </h3>
+            <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-1">
+              Remote Sensing
+            </p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+              Satellite image processing and aerial photogrammetry.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-400">
+            Tiruchirappalli, Tamil Nadu
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 rounded-md text-xs font-bold bg-slate-800 text-white dark:bg-slate-700 inline-block mb-3">
+              M.Sc. (1990)
+            </span>
+            <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white">
+              Annamalai University
+            </h3>
+            <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-1">
+              Geology
+            </p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+              Structural geology, mineralogy, and physical stratigraphy.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-400">
+            Annamalai Nagar, Tamil Nadu
+          </div>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex flex-col justify-between">
+          <div>
+            <span class="px-3 py-1 rounded-md text-xs font-bold bg-slate-800 text-white dark:bg-slate-700 inline-block mb-3">
+              B.Sc. (1988)
+            </span>
+            <h3 class="text-base font-bold font-heading text-slate-900 dark:text-white">
+              National College
+            </h3>
+            <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-1">
+              Geology
+            </p>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">
+              Foundational Earth Sciences and physical field exploration.
+            </p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 dark:border-slate-800 text-[11px] text-slate-400">
+            Tiruchirappalli, Tamil Nadu
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 3: Courses Taught -->
+    <section id="courses">
+      <div class="max-w-3xl mb-8">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Pedagogy</span>
+        <h2 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 dark:text-white mt-1">
+          Courses Taught & Curriculum Development
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-camera"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Principles of Remote Sensing & Photogrammetry</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Sensors, spectral signatures, satellites, and optical geometry.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-layer-group"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">GIS and Software Technologies</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Geospatial database architecture, raster/vector topology, and spatial queries.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-faucet-drip"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">RS & GIS in Hydrology & Water Resources</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Runoff computation, flood hydrographs, and micro-catchment planning.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-mountain"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Geological Remote Sensing and Techniques</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Lineament extraction, mineral discrimination, and tectonic interpretation.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-sliders"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Digital Image Processing & Techniques</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Filtering, PCA transformation, feature enhancement, and supervised classification.</p>
+          </div>
+        </div>
+
+        <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 flex items-start gap-4">
+          <div class="w-10 h-10 rounded-xl bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 flex items-center justify-center text-lg flex-shrink-0">
+            <i class="fa-solid fa-compass-drafting"></i>
+          </div>
+          <div>
+            <h3 class="font-bold text-sm text-slate-900 dark:text-white">Engineering Geology</h3>
+            <p class="text-xs text-slate-500 dark:text-slate-400 mt-1">Foundation stability, dam/tunnel site geological surveys, and active fault safety.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section 4: Distinctions & Institutional Leadership -->
+    <section id="honors">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Left: Awards -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="max-w-3xl">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Recognition</span>
+            <h2 class="text-2xl sm:text-3xl font-bold font-heading text-slate-900 dark:text-white mt-1">
+              Awards & Honors
+            </h2>
+          </div>
+
+          <div class="space-y-4">
+            
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <div class="flex items-center justify-between gap-2">
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                  Jury for Best Paper Selection & Session Chair
+                </h3>
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-300">2024</span>
+              </div>
+              <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">IEEE InGARSS 2024 (IIT Bombay & NIT Goa)</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5">Delivered Lead Talk and served as jury chair for best scientific papers.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <div class="flex items-center justify-between gap-2">
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                  DST Young Scientist Award & Research Grant
+                </h3>
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-blue-100 text-blue-800 dark:bg-blue-900/50 dark:text-blue-300">2004</span>
+              </div>
+              <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">Department of Science and Technology (DST), Govt. of India</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5">Awarded prestigious Young Scientist fast-track research grant.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <div class="flex items-center justify-between gap-2">
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                  BRICS Working Group Expert
+                </h3>
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">2017</span>
+              </div>
+              <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">DST Government of India</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5">Nominated expert for geospatial technology collaboration across BRICS nations.</p>
+            </div>
+
+            <div class="p-5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800">
+              <div class="flex items-center justify-between gap-2">
+                <h3 class="font-bold text-slate-900 dark:text-white text-sm sm:text-base">
+                  International Resource Person & Technical Convenor
+                </h3>
+                <span class="px-2.5 py-0.5 rounded text-xs font-bold bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-300">Global</span>
+              </div>
+              <p class="text-xs font-semibold text-blue-600 dark:text-blue-400 mt-0.5">Asian Institute of Technology (AIT) Bangkok & MAPASIA</p>
+              <p class="text-xs text-slate-500 dark:text-slate-400 mt-1.5">Trained Korean Oil Corp personnel and served as Technical Convenor in Malaysia.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: Institutional Roles & Life Memberships -->
+        <div class="lg:col-span-5 space-y-8">
+          
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Leadership</span>
+            <h2 class="text-xl sm:text-2xl font-bold font-heading text-slate-900 dark:text-white mt-1 mb-4">
+              Institutional Responsibilities
+            </h2>
+
+            <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 border border-slate-200 dark:border-slate-800">
+              <ul class="space-y-3 text-xs text-slate-600 dark:text-slate-300">
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-angle-right text-blue-600 dark:text-blue-400 mt-0.5"></i>
+                  <span>Coordinator, Earthquake Research Cell (CET, SRMIST) since 2012</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-angle-right text-blue-600 dark:text-blue-400 mt-0.5"></i>
+                  <span>NIDM Expert Member, India Universities Network for Disaster Risk Reduction (IUIN-DRR)</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-angle-right text-blue-600 dark:text-blue-400 mt-0.5"></i>
+                  <span>Institute Coordinator, IIRS / ISRO-EDUSAT Program</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-angle-right text-blue-600 dark:text-blue-400 mt-0.5"></i>
+                  <span>Technical Convenor, International Groundwater Conference (IGWC 2016)</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-angle-right text-blue-600 dark:text-blue-400 mt-0.5"></i>
+                  <span>Board of Studies Member, Department of Civil Engineering</span>
+                </li>
+                <li class="flex items-start gap-2.5">
+                  <i class="fa-solid fa-angle-right text-blue-600 dark:text-blue-400 mt-0.5"></i>
+                  <span>ABET Subject Coordinator & Curriculum Developer for B.Tech/M.Tech</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div>
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-600 dark:text-emerald-400">Affiliations</span>
+            <h2 class="text-lg font-bold font-heading text-slate-900 dark:text-white mt-1 mb-3">
+              Life Memberships
+            </h2>
+
+            <div class="flex flex-wrap gap-2 text-xs">
+              <span class="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">
+                Indian Society of Remote Sensing (ISRS)
+              </span>
+              <span class="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">
+                Indian Society of Earthquake Technology (ISET)
+              </span>
+              <span class="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">
+                Indian Society of Geomatics (ISG)
+              </span>
+              <span class="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">
+                Indian Science Congress Association (ISCA)
+              </span>
+              <span class="px-3 py-1.5 rounded-xl bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-800">
+                Indian Society for Technical Education (ISTE)
+              </span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 py-10 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-center md:text-left">
+        <p class="font-bold text-slate-900 dark:text-white text-sm">Dr. R. Sivakumar</p>
+        <p class="mt-0.5">Professor of Civil Engineering & Coordinator, Earthquake Research Cell</p>
+        <p class="text-slate-400 dark:text-slate-500 mt-0.5">SRM Institute of Science and Technology, Kattankulathur, Chennai - 603203</p>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="index.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
+        <span>•</span>
+        <a href="research.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Research & Patents</a>
+        <span>•</span>
+        <a href="publications.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Publications</a>
+        <span>•</span>
+        <a href="experience.html" class="text-blue-600 dark:text-blue-400 font-semibold">Experience</a>
+        <span>•</span>
+        <a href="contact.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

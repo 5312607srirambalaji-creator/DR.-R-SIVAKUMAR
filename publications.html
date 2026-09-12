@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications Archive (95+) | Dr. R. Sivakumar | SRMIST</title>
+  <meta name="description" content="Searchable archive of 95+ peer-reviewed journal articles, conference papers, and books by Dr. R. Sivakumar, SRMIST.">
+  
+  <!-- Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0c4da2',
+              50: '#f0f6fe',
+              100: '#dceafd',
+              200: '#bfd9fc',
+              500: '#0c4da2',
+              600: '#0a3f85',
+              700: '#083470',
+              800: '#072b5c',
+              900: '#051f43',
+            },
+            accent: {
+              gold: '#d97706',
+              light: '#fbbf24',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Sticky Navbar -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 dark:border-slate-800/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden ring-2 ring-blue-600/30 dark:ring-blue-400/30 group-hover:ring-blue-600 transition-all shadow-sm">
+            <img src="assets/profile.jpg" alt="Dr. R. Sivakumar" class="w-full h-full object-cover object-top">
+          </div>
+          <div>
+            <div class="font-heading font-bold text-lg text-slate-900 dark:text-white leading-tight tracking-tight flex items-center gap-2">
+              Dr. R. Sivakumar
+              <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-300">SRMIST</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Professor & Coordinator, Earthquake Research Cell</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1.5 font-medium text-sm text-slate-600 dark:text-slate-300">
+          <a href="index.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Home</a>
+          <a href="research.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Research & Patents</a>
+          <a href="publications.html" class="px-3.5 py-2 rounded-xl text-blue-600 dark:text-blue-400 font-semibold bg-blue-50 dark:bg-blue-950/60 transition-colors">Publications (95)</a>
+          <a href="experience.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Experience & Teaching</a>
+          <a href="contact.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Contact & Inquiry</a>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="flex items-center gap-2.5">
+          <button type="button" aria-label="Toggle Theme" class="theme-toggle-btn p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 border border-slate-200 dark:border-slate-700 transition-all focus:outline-none">
+            <i class="fa-solid fa-moon hidden dark:block text-amber-300"></i>
+            <i class="fa-solid fa-sun block dark:hidden text-amber-500"></i>
+          </button>
+
+          <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition-all">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Inquire</span>
+          </a>
+
+          <button id="mobile-menu-btn" type="button" aria-label="Open Navigation Menu" class="lg:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 focus:outline-none">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg px-4 pt-3 pb-5 space-y-1 shadow-xl">
+      <a href="index.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Home</a>
+      <a href="research.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Research & Patents</a>
+      <a href="publications.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50">Publications (95)</a>
+      <a href="experience.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Experience & Teaching</a>
+      <a href="contact.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Contact & Inquiry</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="bg-gradient-to-b from-blue-50/70 via-white to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 py-12 border-b border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Scholarly Works</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+          Publications Archive (95+)
+        </h1>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+          Comprehensive searchable repository of 56 Journal papers (Springer, Elsevier, SCI, Scopus), 31 International Conference proceedings, and 8 Books and edited book chapters.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Publications Explorer -->
+  <main class="py-12 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-1">
+    
+    <!-- Controls Header -->
+    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
+      <div id="pub-count" class="text-xs sm:text-sm font-semibold text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 px-4 py-2 rounded-xl border border-blue-200 dark:border-blue-900/60 self-start">
+        Loading publications...
+      </div>
+      <div class="text-xs text-slate-500 dark:text-slate-400">
+        Click <strong>Copy Citation</strong> on any item for quick referencing.
+      </div>
+    </div>
+
+    <!-- Search Bar & Category Filters -->
+    <div class="space-y-4 mb-8">
+      <div id="pub-search-wrap" class="relative">
+        <i class="fa-solid fa-magnifying-glass absolute left-4 top-1/2 -translate-y-1/2 text-slate-400"></i>
+        <input type="text" id="pub-search" placeholder="Search by title, author, journal (e.g. Springer, Natural Hazards, Flood, 2024, Seismic)..." class="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 text-slate-900 dark:text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-600 text-sm transition-all shadow-sm">
+      </div>
+
+      <div id="pub-tabs" class="flex flex-wrap items-center gap-2">
+        <button data-tab="all" class="pub-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-blue-600 text-white shadow">
+          All Publications (95)
+        </button>
+        <button data-tab="journal" class="pub-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-blue-500">
+          Journal Papers (56)
+        </button>
+        <button data-tab="conference" class="pub-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-blue-500">
+          Conference Proceedings (31)
+        </button>
+        <button data-tab="book" class="pub-tab px-4 py-2 rounded-xl text-xs font-bold transition-all bg-white dark:bg-slate-800 text-slate-700 dark:text-slate-300 border border-slate-200 dark:border-slate-700 hover:border-blue-500">
+          Books & Chapters (8)
+        </button>
+      </div>
+    </div>
+
+    <!-- Rendered Publications List -->
+    <div id="publications-list" class="space-y-4">
+      <!-- Injected by script.js -->
+    </div>
+
+    <!-- Load More Button -->
+    <div class="mt-10 text-center">
+      <button id="load-more-pubs" class="px-8 py-3.5 rounded-xl font-semibold text-sm bg-white dark:bg-slate-800 hover:bg-blue-600 hover:text-white dark:hover:bg-blue-600 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 transition-all shadow-sm">
+        Load More Publications
+      </button>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 py-10 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-center md:text-left">
+        <p class="font-bold text-slate-900 dark:text-white text-sm">Dr. R. Sivakumar</p>
+        <p class="mt-0.5">Professor of Civil Engineering & Coordinator, Earthquake Research Cell</p>
+        <p class="text-slate-400 dark:text-slate-500 mt-0.5">SRM Institute of Science and Technology, Kattankulathur, Chennai - 603203</p>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="index.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
+        <span>•</span>
+        <a href="research.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Research & Patents</a>
+        <span>•</span>
+        <a href="publications.html" class="text-blue-600 dark:text-blue-400 font-semibold">Publications</a>
+        <span>•</span>
+        <a href="experience.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
+        <span>•</span>
+        <a href="contact.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

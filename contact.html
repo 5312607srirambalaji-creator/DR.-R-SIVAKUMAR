@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Inquiries | Dr. R. Sivakumar | SRMIST</title>
+  <meta name="description" content="Official coordinates and direct inquiry form for Dr. R. Sivakumar, Professor & Coordinator, Earthquake Research Cell, SRMIST.">
+  
+  <!-- Fonts & Tailwind CSS CDN -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#0c4da2',
+              50: '#f0f6fe',
+              100: '#dceafd',
+              200: '#bfd9fc',
+              500: '#0c4da2',
+              600: '#0a3f85',
+              700: '#083470',
+              800: '#072b5c',
+              900: '#051f43',
+            },
+            accent: {
+              gold: '#d97706',
+              light: '#fbbf24',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            sans: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-slate-50 text-slate-800 dark:bg-slate-950 dark:text-slate-100 transition-colors duration-300 min-h-screen flex flex-col antialiased selection:bg-blue-600 selection:text-white">
+
+  <!-- Top Sticky Navbar -->
+  <header class="sticky top-0 z-50 glass-nav border-b border-slate-200/80 dark:border-slate-800/80 transition-all duration-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-xl overflow-hidden ring-2 ring-blue-600/30 dark:ring-blue-400/30 group-hover:ring-blue-600 transition-all shadow-sm">
+            <img src="assets/profile.jpg" alt="Dr. R. Sivakumar" class="w-full h-full object-cover object-top">
+          </div>
+          <div>
+            <div class="font-heading font-bold text-lg text-slate-900 dark:text-white leading-tight tracking-tight flex items-center gap-2">
+              Dr. R. Sivakumar
+              <span class="inline-flex items-center px-2 py-0.5 rounded text-[10px] font-semibold bg-blue-100 dark:bg-blue-900/60 text-blue-800 dark:text-blue-300">SRMIST</span>
+            </div>
+            <p class="text-xs text-slate-500 dark:text-slate-400 font-medium">Professor & Coordinator, Earthquake Research Cell</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-1.5 font-medium text-sm text-slate-600 dark:text-slate-300">
+          <a href="index.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Home</a>
+          <a href="research.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Research & Patents</a>
+          <a href="publications.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Publications (95)</a>
+          <a href="experience.html" class="px-3.5 py-2 rounded-xl hover:text-blue-600 dark:hover:text-blue-400 hover:bg-slate-100 dark:hover:bg-slate-800/60 transition-colors">Experience & Teaching</a>
+          <a href="contact.html" class="px-3.5 py-2 rounded-xl text-blue-600 dark:text-blue-400 font-semibold bg-blue-50 dark:bg-blue-950/60 transition-colors">Contact & Inquiry</a>
+        </nav>
+
+        <!-- Right Controls -->
+        <div class="flex items-center gap-2.5">
+          <button type="button" aria-label="Toggle Theme" class="theme-toggle-btn p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400 border border-slate-200 dark:border-slate-700 transition-all focus:outline-none">
+            <i class="fa-solid fa-moon hidden dark:block text-amber-300"></i>
+            <i class="fa-solid fa-sun block dark:hidden text-amber-500"></i>
+          </button>
+
+          <a href="contact.html" class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-semibold text-white bg-blue-600 hover:bg-blue-700 shadow-sm transition-all">
+            <i class="fa-solid fa-paper-plane"></i>
+            <span>Inquire</span>
+          </a>
+
+          <button id="mobile-menu-btn" type="button" aria-label="Open Navigation Menu" class="lg:hidden p-2.5 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 focus:outline-none">
+            <i class="fa-solid fa-bars text-lg"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Navigation -->
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-slate-200 dark:border-slate-800 bg-white/95 dark:bg-slate-900/95 backdrop-blur-lg px-4 pt-3 pb-5 space-y-1 shadow-xl">
+      <a href="index.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Home</a>
+      <a href="research.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Research & Patents</a>
+      <a href="publications.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Publications (95)</a>
+      <a href="experience.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-slate-700 dark:text-slate-200 hover:bg-slate-100 dark:hover:bg-slate-800">Experience & Teaching</a>
+      <a href="contact.html" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-base font-medium text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/50">Contact & Inquiry</a>
+    </div>
+  </header>
+
+  <!-- Page Banner -->
+  <div class="bg-gradient-to-b from-blue-50/70 via-white to-slate-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-950 py-12 border-b border-slate-200/80 dark:border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Communication</span>
+        <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold font-heading text-slate-900 dark:text-white mt-1">
+          Contact & Academic Inquiries
+        </h1>
+        <p class="text-sm sm:text-base text-slate-600 dark:text-slate-300 mt-2 leading-relaxed">
+          Reach out for research collaborations, doctoral supervision, project consultations, or invited guest lectures.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main class="py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex-1">
+    
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+      
+      <!-- Left: Contact Details Cards (Col 5) -->
+      <div class="lg:col-span-5 space-y-6">
+        
+        <!-- Emails Card -->
+        <div class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-5">
+          <h2 class="text-lg font-bold font-heading text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-at text-blue-600 dark:text-blue-400"></i>
+            Direct Email Channels
+          </h2>
+
+          <!-- Alternate Inquiry Email (Highlighted) -->
+          <div class="p-4 rounded-2xl bg-amber-50 dark:bg-amber-950/40 border border-amber-200 dark:border-amber-800/60 space-y-1">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] uppercase font-bold text-amber-800 dark:text-amber-400 flex items-center gap-1.5">
+                <i class="fa-solid fa-star text-[10px]"></i> Alternate Inquiry Email
+              </span>
+              <button data-email="sivageoinfo@gmail.com" class="copy-email-btn text-xs font-bold text-amber-800 dark:text-amber-300 hover:underline">
+                <span class="copy-tooltip">Copy</span>
+              </button>
+            </div>
+            <a href="mailto:sivageoinfo@gmail.com" class="text-base font-bold text-slate-900 dark:text-white hover:text-amber-600 dark:hover:text-amber-400 block break-all">
+              sivageoinfo@gmail.com
+            </a>
+            <p class="text-[11px] text-amber-700/80 dark:text-amber-400/80">
+              Recommended for academic inquiries, guest lectures, and rapid responses.
+            </p>
+          </div>
+
+          <!-- Primary Institutional Email -->
+          <div class="p-4 rounded-2xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200 dark:border-slate-700 space-y-1">
+            <div class="flex items-center justify-between gap-2">
+              <span class="text-[11px] uppercase font-bold text-slate-500 dark:text-slate-400">
+                Official Institutional Email
+              </span>
+              <button data-email="sivakumr@srmist.edu.in" class="copy-email-btn text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline">
+                <span class="copy-tooltip">Copy</span>
+              </button>
+            </div>
+            <a href="mailto:sivakumr@srmist.edu.in" class="text-base font-bold text-slate-900 dark:text-white hover:text-blue-600 dark:hover:text-blue-400 block break-all">
+              sivakumr@srmist.edu.in
+            </a>
+            <p class="text-[11px] text-slate-500 dark:text-slate-400">
+              Department of Civil Engineering, SRMIST.
+            </p>
+          </div>
+        </div>
+
+        <!-- Coordinates Card -->
+        <div class="p-6 sm:p-7 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md space-y-5">
+          <h2 class="text-lg font-bold font-heading text-slate-900 dark:text-white flex items-center gap-2">
+            <i class="fa-solid fa-location-dot text-amber-500"></i>
+            Office & Campus Location
+          </h2>
+
+          <div class="text-xs sm:text-sm text-slate-600 dark:text-slate-300 space-y-2 leading-relaxed">
+            <p class="font-semibold text-slate-900 dark:text-white">
+              Department of Civil Engineering<br>
+              Earthquake Research Cell (CET)
+            </p>
+            <p>
+              Faculty of Engineering & Technology<br>
+              SRM Institute of Science and Technology (SRMIST)<br>
+              Kattankulathur, Chengalpattu District, Chennai - 603203<br>
+              Tamil Nadu, India
+            </p>
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 dark:border-slate-800 flex items-center gap-3">
+            <a href="https://scholar.google.com/citations?user=dr-r-sivakumar" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 flex items-center justify-center transition-colors shadow-sm" title="Google Scholar">
+              <i class="fa-brands fa-google"></i>
+            </a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=6603417772" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-amber-600 flex items-center justify-center transition-colors shadow-sm" title="Scopus">
+              <i class="fa-solid fa-graduation-cap"></i>
+            </a>
+            <a href="https://www.researchgate.net/profile/Ramamoorthy-Sivakumar" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-emerald-600 flex items-center justify-center transition-colors shadow-sm" title="ResearchGate">
+              <i class="fa-brands fa-researchgate"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/dr-r-sivakumar-9616772/" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-blue-600 flex items-center justify-center transition-colors shadow-sm" title="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://www.srmist.edu.in/faculty/dr-r-sivakumar-2/" target="_blank" rel="noopener" class="w-10 h-10 rounded-xl bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:text-indigo-600 flex items-center justify-center transition-colors shadow-sm" title="SRMIST Faculty Portal">
+              <i class="fa-solid fa-building-columns"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Right: Interactive Inquiry Form (Col 7) -->
+      <div class="lg:col-span-7">
+        <div class="p-8 rounded-3xl bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-800 shadow-md">
+          
+          <h2 class="text-xl font-bold font-heading text-slate-900 dark:text-white mb-2">
+            Send an Academic Inquiry
+          </h2>
+          <p class="text-xs text-slate-500 dark:text-slate-400 mb-6">
+            Dispatch a structured inquiry directly to Dr. Sivakumar's inbox.
+          </p>
+
+          <form id="contact-form" class="space-y-4">
+            
+            <!-- Recipient Selector -->
+            <div>
+              <label for="target-email" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                Send Inquiry To:
+              </label>
+              <select id="target-email" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 font-semibold">
+                <option value="sivageoinfo@gmail.com" selected>sivageoinfo@gmail.com (Alternate / Direct Inquiry)</option>
+                <option value="sivakumr@srmist.edu.in">sivakumr@srmist.edu.in (Official SRMIST)</option>
+              </select>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="sender-name" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                  Your Full Name *
+                </label>
+                <input type="text" id="sender-name" required placeholder="Dr. / Prof. / Scholar Name" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all">
+              </div>
+              <div>
+                <label for="sender-email" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                  Your Email Address *
+                </label>
+                <input type="email" id="sender-email" required placeholder="name@institution.edu" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all">
+              </div>
+            </div>
+
+            <div>
+              <label for="sender-subject" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                Subject / Scope of Inquiry *
+              </label>
+              <input type="text" id="sender-subject" required placeholder="e.g. Research Collaboration on Seismotectonics / Ph.D. Supervision" class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all">
+            </div>
+
+            <div>
+              <label for="sender-message" class="block text-xs font-semibold text-slate-700 dark:text-slate-300 uppercase tracking-wider mb-1.5">
+                Message Content *
+              </label>
+              <textarea id="sender-message" rows="5" required placeholder="Please provide details regarding your query, institutional affiliation, or proposed collaboration..." class="w-full px-4 py-3 rounded-xl bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100 text-sm focus:outline-none focus:ring-2 focus:ring-blue-600 transition-all"></textarea>
+            </div>
+
+            <div id="contact-alert" class="hidden p-4 rounded-xl bg-emerald-50 dark:bg-emerald-950/60 border border-emerald-200 dark:border-emerald-800 text-emerald-800 dark:text-emerald-300 text-xs font-semibold">
+              <i class="fa-solid fa-check mr-1.5"></i> Preparing email in your default client... Alternatively, email directly to <a href="mailto:sivageoinfo@gmail.com" class="underline">sivageoinfo@gmail.com</a>
+            </div>
+
+            <button type="submit" class="w-full py-3.5 rounded-xl font-bold text-sm text-white bg-blue-600 hover:bg-blue-700 shadow-md shadow-blue-600/25 transition-all flex items-center justify-center gap-2">
+              <i class="fa-solid fa-paper-plane"></i>
+              <span>Send Inquiry to sivageoinfo@gmail.com</span>
+            </button>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="mt-auto border-t border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-400 py-10 text-xs">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="text-center md:text-left">
+        <p class="font-bold text-slate-900 dark:text-white text-sm">Dr. R. Sivakumar</p>
+        <p class="mt-0.5">Professor of Civil Engineering & Coordinator, Earthquake Research Cell</p>
+        <p class="text-slate-400 dark:text-slate-500 mt-0.5">SRM Institute of Science and Technology, Kattankulathur, Chennai - 603203</p>
+      </div>
+
+      <div class="flex items-center gap-4 text-xs font-medium">
+        <a href="index.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Home</a>
+        <span>•</span>
+        <a href="research.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Research & Patents</a>
+        <span>•</span>
+        <a href="publications.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Publications</a>
+        <span>•</span>
+        <a href="experience.html" class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors">Experience</a>
+        <span>•</span>
+        <a href="contact.html" class="text-blue-600 dark:text-blue-400 font-semibold">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
